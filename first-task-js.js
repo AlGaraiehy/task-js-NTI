@@ -28,8 +28,13 @@
 let count = +prompt("Enter Number")
 
 function multiplyFive(){
-     let multi = count * 5
-     document.write("The number after multiplying it by 5 is: " +multi)
+    let divid = count / 5
+    if(count % 5 ==0){
+      document.write("The number after divided it by 5 is: " + divid)  
+    }
+    else if (count % 5 > 0) {
+        document.write("It is not divisible by 5: ")
+     }
     return
 }
 multiplyFive()
